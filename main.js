@@ -87,4 +87,23 @@ whatsClsBtn.addEventListener('click', () => {
 
 
 
+const singleProject = document.querySelectorAll('.project_link');
+const click = document.querySelectorAll('.click');
+
+singleProject.forEach((item) => {
+	item.addEventListener('mouseover', () => {
+		let ele = item.firstChild;
+		ele.style.display = 'block';
+	})
+})
+
+singleProject.forEach((item) => {
+	item.addEventListener('mouseout', () => {
+		let ele = item.firstChild;
+		ele.style.display = 'none';
+	})
+})
+
+
+
 

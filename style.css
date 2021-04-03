@@ -392,9 +392,6 @@ small {
 	width: 100%;
 }
 
-.project-pic:hover {
-	opacity: 0.2;
-}
 
 .single-project {
 	box-shadow: 0px 0px 4px rgba(0,0,0,0.8);
@@ -425,6 +422,7 @@ small {
 	background-color: white;
 	border-radius: 10px;
 	line-height: 40px;
+	display: none;
 }
 
 .forclick {
