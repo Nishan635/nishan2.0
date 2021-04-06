@@ -1,9 +1,7 @@
 :root {
-	--text-color: #80ffdf;
-	--head-color: #d4da58;
-	--head-font: 'Ubuntu', sans-serif;
-	--roboto: 'Roboto', sans-serif;
-	--Merriweather: 'Merriweather', serif;
+	--text-color: rgba(110, 111, 95, 0.73);
+	--head-color: rgba(205, 206, 184, 0.73);
+	--head-font: 'Berkshire Swash', cursive;
 	--sub-bg: #E6E9EC;
 	--main-bg: #F7F7F7;
 	--span-bg: #303236;
@@ -133,7 +131,7 @@ body {
 
 .ident {
 	margin: 0px 0px 0px 0px;
-	color: var(--text-color);
+	color: var(--head-color);
 	font-family: 'Berkshire Swash', cursive;
 }
 
@@ -146,7 +144,7 @@ body {
 }
 
 .nishan {
-	color: #33ffcc;
+	color: var(--head-color);
 	font-size: 34px;
 	font-family: 'Berkshire Swash', cursive;
 }
@@ -159,14 +157,14 @@ body {
 	padding: 10px 15px;
 	margin-left: 10px;
 	text-align: justify;
-	font-family: var(--roboto);
+	font-family: var(--head-font);
 	word-spacing: 2px;
 	letter-spacing: 1px;
 }
 
 .text {
 	font-size: 18px;
-	font-family: var(--roboto);
+	font-family: var(--head-font);
 	margin: 30px 0px;
 	line-height: 30px;
 	text-align: justify;
@@ -179,9 +177,9 @@ body {
 
 .i-learn {
 	padding: 5px 10px;
-	background-color: var(--sub-bg);
+	background-color: rgba(15,15,15,0.2);
 	font-size: 20px;
-	color: #333;
+	color: var(--head-color);
 	font-family: var(--head-font);
 	border-radius: 5px;
 }
@@ -195,7 +193,7 @@ body {
 
 .goo-you {
 	list-style-type: none;
-	font-family: var(--roboto);
+	font-family: var(--head-font);
 	line-height: 28px;
 	color: var(--text-color);
 }
@@ -207,7 +205,7 @@ body {
 }
 
 .honurs {
-	font-family: var(--roboto);
+	font-family: var(--head-font);
 	color: var(--text-color);
 }
 
@@ -217,7 +215,12 @@ body {
 }
 
 .int-sub {
-	color: var(--text-color);	
+	color: var(--text-color);
+	
+}
+
+.int-sub li {
+	font-family: var(--head-font);
 }
 
 hr {
@@ -242,16 +245,21 @@ hr {
 .fa-google, .fa-youtube, 
 .fa-angle-double-right
  {
-	color: #e93d1b;
+	color: var(--head-color);
 }
 
 .icon a {
-	color: var(--text-color);
+	color: var(--head-color);
 	font-size: 30px;
 	display: inline-block;
 	margin: 0px 0px 0px 10px;
 	cursor: pointer;
 	
+}
+
+.email-icon, 
+.whatsapp-icon {
+	color: var(--head-color);
 }
 
 small {
@@ -342,7 +350,7 @@ small {
 }
 
 .all-skill {
-	color: white;
+	color: var(--head-color);
 	font-size: 20px;
 	margin-top: 10px;
 	display: inline-block;
@@ -384,7 +392,7 @@ small {
 
 .project-line-two,
 .project-line-three {
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 .project-pic {
@@ -394,7 +402,7 @@ small {
 
 
 .single-project {
-	box-shadow: 0px 0px 4px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 6px rgba(260,260,260,0.8);
 	padding: 10px;
 	position: relative;
 
@@ -410,7 +418,7 @@ small {
 
 .click {
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: black;
@@ -423,6 +431,16 @@ small {
 	border-radius: 10px;
 	line-height: 40px;
 	display: none;
+	animation: click_to_view;
+	animation-duration: .3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	z-index: 15;
+}
+
+
+.project_link {
+	z-index: 10;
 }
 
 .forclick {
@@ -444,11 +462,11 @@ small {
 	width: 60%;
 	
 	padding: 40px;
-	box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
 }
 
 .contact-icon {
-	color: var(--text-color);
+	color: var(--head-color);
 	line-height: 60px;
 	font-size: 20px;
 	font-family: 'Berkshire Swash', cursive;
@@ -538,6 +556,11 @@ small {
   50% { height: 100%;}
   75% { height: 100%;}
   100% { height: 0%;}
+}
+
+@keyframes click_to_view {
+  0% {top: 30%;}
+  100% { top: 50%;}
 }
 
 

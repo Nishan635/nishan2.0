@@ -89,11 +89,15 @@ whatsClsBtn.addEventListener('click', () => {
 
 const singleProject = document.querySelectorAll('.project_link');
 const click = document.querySelectorAll('.click');
+const projectOne = document.querySelector('.single-project');
 
 singleProject.forEach((item) => {
 	item.addEventListener('mouseover', () => {
 		let ele = item.firstChild;
 		ele.style.display = 'block';
+		ele.style.color = "white";
+		ele.style.backgroundColor = "black";
+		item.style.opacity = '0.4';
 	})
 })
 
@@ -101,6 +105,7 @@ singleProject.forEach((item) => {
 	item.addEventListener('mouseout', () => {
 		let ele = item.firstChild;
 		ele.style.display = 'none';
+		item.style.opacity = '1';
 	})
 })
 
