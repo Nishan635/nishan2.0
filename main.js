@@ -4,12 +4,13 @@ window.addEventListener("load", () => {
 });
 
 const homeSection = document.querySelector(".home_section");
-const home = document.querySelector(".spc_home");
+const home = document.querySelector(".spc-containers .home");
 const allSection = document.querySelector(".all_sec_ext_home");
 const sections = document.querySelectorAll(".sections");
 const options = document.querySelectorAll(".options1");
 const containers = document.querySelector(".containers");
 const main_menu = document.querySelector(".main_menu");
+const insideHome = document.querySelector(".main_menu .home");
 
 options.forEach((item) => {
   item.addEventListener("click", () => {
@@ -27,9 +28,15 @@ options.forEach((item) => {
 });
 
 home.addEventListener("click", () => {
-  main_menu.classList.remove("abc");
-  allSection.classList.remove("display");
+  containers.classList.remove("animi");
   homeSection.style.display = "block";
+  allSection.classList.remove("display");
+});
+
+insideHome.addEventListener("click", () => {
+  // containers.classList.remove("animi");
+  homeSection.style.display = "block";
+  allSection.classList.remove("display");
 });
 
 const emailIcon = document.querySelector(".email-icon");
@@ -43,6 +50,30 @@ clsBtn.addEventListener("click", () => {
   const aler = document.querySelector(".alert");
   aler.style.display = "none";
 });
+
+document.querySelector(".btn").addEventListener("click", () => {
+  homeSection.style.display = "none";
+  main_menu.classList.remove("abc");
+  document.querySelector(".footer").style.display = "none";
+  allSection.classList.add("display");
+  containers.classList.add("animi");
+});
+
+// forColor = document.querySelectorAll(".spc-containers .options");
+
+// const callback = () => {
+//   forColor.forEach((item) => {
+//     item.style.color = "red";
+//   });
+// };
+
+// const object = {
+//   threshold: 0.2,
+// };
+// const observer = new IntersectionObserver(callback, object);
+// forColor.forEach((section) => {
+//   observer.observe(section);
+// });
 
 const whatsApp = document.querySelector(".whatsapp-icon");
 var whatsAlert = document.querySelector(".whats-app-alert");
