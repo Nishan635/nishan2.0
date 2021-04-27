@@ -60,6 +60,7 @@ document.querySelector(".btn").addEventListener("click", () => {
 });
 
 // forColor = document.querySelectorAll(".spc-containers .options");
+// forScroll = document.querySelectorAll(".sections");
 
 // const callback = () => {
 //   forColor.forEach((item) => {
@@ -71,7 +72,7 @@ document.querySelector(".btn").addEventListener("click", () => {
 //   threshold: 0.2,
 // };
 // const observer = new IntersectionObserver(callback, object);
-// forColor.forEach((section) => {
+// forScroll.forEach((section) => {
 //   observer.observe(section);
 // });
 
