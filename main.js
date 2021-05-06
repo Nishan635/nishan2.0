@@ -16,7 +16,7 @@ options.forEach((item) => {
   item.addEventListener("click", () => {
     homeSection.style.display = "none";
     main_menu.classList.remove("abc");
-    document.querySelector(".footer").style.display = "none";
+    // document.querySelector(".footer").style.display = "none";
     allSection.classList.add("display");
     containers.classList.add("animi");
     ele = document.getElementById(item.getAttribute("data-link"));
@@ -54,7 +54,7 @@ clsBtn.addEventListener("click", () => {
 document.querySelector(".btn").addEventListener("click", () => {
   homeSection.style.display = "none";
   main_menu.classList.remove("abc");
-  document.querySelector(".footer").style.display = "none";
+  //document.querySelector(".footer").style.display = "none";
   allSection.classList.add("display");
   containers.classList.add("animi");
 });

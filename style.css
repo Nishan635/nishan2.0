@@ -42,7 +42,7 @@ body {
 
 .containers {
   background-color: #ffb400;
-  width: 420px;
+  width: 465px;
   font-weight: 400;
   border-radius: 10px;
   margin: auto;
@@ -54,6 +54,10 @@ body {
   margin: 20px 0px 0px 0px;
 }
 
+.cv {
+  text-decoration: none;
+}
+
 .options {
   font-size: 18px;
   font-family: var(--head-font);
@@ -63,18 +67,19 @@ body {
 }
 
 .options:hover {
-  background-color: #72b626;
-  color: white;
+  background-color: #2bdd2b;
+  color: black;
   transition: 0.5s ease;
 }
 
 .footer {
-  color: var(--text-color);
-  position: absolute;
-  bottom: 0;
-  margin-left: 40%;
-  font-size: 14px;
+  color: var(--head-color);
+  font-size: 12px;
   font-family: var(--sub-font);
+  text-align: center;
+  border-top: 1px solid #393636;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .btn {
@@ -94,7 +99,7 @@ body {
   border-radius: 10px 0px 0px 10px;
 }
 
-.contact:hover {
+.cv:hover {
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -180,7 +185,7 @@ body {
   font-family: var(--head-font);
   color: var(--head-color);
   font-weight: var(--head-width);
-  margin: 30px 0px 15px 0px;
+  margin: 30px 0px 15px 10px;
 }
 
 .goo-you {
@@ -396,6 +401,10 @@ small {
   border-radius: 5px;
 }
 
+.psd:hover {
+  transform: translate(0px, -10px);
+  transition: 0.5s ease;
+}
 .single-project:hover {
   transform: translate(0px, -10px);
   transition: 0.5s ease;
@@ -482,6 +491,7 @@ small {
 }
 
 .animi {
+  width: 500px;
   font-weight: 900;
   color: white;
   background-color: black;
@@ -568,9 +578,28 @@ small {
 
 .main_menu li {
   color: white;
-  margin-top: 18px;
+  margin-top: 15px;
   font-size: 18px;
   font-weight: 700;
+}
+
+.main_menu li:hover {
+  color: #2bdd2b;
+  background-color: #252525;
+}
+
+.main_menu a {
+  color: white;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main_menu a:hover {
+  color: #2bdd2b;
+  background-color: #252525;
 }
 .abc {
   top: 0px;
@@ -592,6 +621,42 @@ small {
   font-weight: 900;
   color: #ffb400;
   font-size: 30px;
+}
+
+.what_i-do {
+  margin-top: 110px;
+  margin-bottom: -8px;
+}
+
+.psd {
+  background-color: #393636;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.psd p {
+  color: var(--text-color);
+  font-family: var(--sub-font);
+}
+
+.psd h3 {
+  color: var(--head-color);
+  font-family: var(--head-font);
+}
+
+.psdtohtml {
+  height: 299px;
+}
+
+.do {
+  font-size: 35px;
+  color: #becebe;
+  margin-bottom: 12px;
+}
+
+.fa-code {
+  font-size: 40px;
 }
 
 @keyframes animi {
@@ -835,19 +900,7 @@ small {
   }
 }
 
-@media screen and (max-width: 440px) {
-  .footer {
-    margin-left: 20%;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .footer {
-    margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 750px) {
   .nav {
     display: block;
   }
@@ -864,9 +917,6 @@ small {
     margin-top: 20px;
     line-height: 20px;
     font-size: 25px;
-  }
-  .btn {
-    margin-top: 10px;
   }
   .project-section {
     margin: 30px 15px 0px 20px;
@@ -900,6 +950,9 @@ small {
   .spc-containers {
     display: none;
   }
+  .footer {
+    display: black;
+  }
 }
 @media screen and (max-width: 278px) {
   .welcom {
@@ -908,6 +961,26 @@ small {
     font-size: 25px;
   }
   .btn {
-    margin-top: -15px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .psd {
+    margin-top: 40px;
+  }
+  .what_i-do {
+    margin-top: 60px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .what-row .col-12 {
+    padding-right: 0px;
+  }
+  .ano_what_row {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
