@@ -633,6 +633,7 @@ small {
   color: white;
   padding: 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .psd p {
@@ -657,6 +658,9 @@ small {
 
 .fa-code {
   font-size: 40px;
+}
+.project-line-one {
+  margin-top: 28px;
 }
 
 @keyframes animi {

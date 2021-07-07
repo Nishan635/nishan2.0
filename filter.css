@@ -1,0 +1,47 @@
+.filter {
+  background-color: #f9f5f5;
+  text-align: center;
+  margin: 0 auto;
+  width: 235px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 2px black;
+}
+.filter_item {
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 6px;
+}
+.all_items {
+  background-color: #ffb400;
+  border-radius: 15px 0px 0px 15px;
+}
+.add {
+  animation: appear;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+.remove {
+  display: none;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 575px) {
+  .defi_txt {
+    margin-top: -90px;
+  }
+  .contact_text {
+    margin-top: -45px;
+  }
+}
+@media screen and (max-width: 286px) {
+  .filter {
+    margin: 0px -14px;
+  }
+}
