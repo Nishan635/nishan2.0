@@ -403,7 +403,9 @@ small {
 .single-project img {
   border: 1px solid white;
 }
-
+.project_title {
+  margin-top: -110px;
+}
 .psd:hover {
   transform: translate(0px, -10px);
   transition: 0.5s ease;
