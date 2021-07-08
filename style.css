@@ -400,6 +400,9 @@ small {
   position: relative;
   border-radius: 5px;
 }
+.single-project img {
+  border: 1px solid white;
+}
 
 .psd:hover {
   transform: translate(0px, -10px);
