@@ -1,0 +1,28 @@
+.spotlight-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.spotlight img {
+  height: 390px;
+  width: 303px;
+  border: 1px solid #686767;
+}
+
+@media screen and (max-width: 768px) {
+  .spotlight-group {
+    flex-direction: column;
+    text-align: center;
+  }
+  .spotlight {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .spotlight img {
+    width: 250px;
+    height: 350px;
+  }
+}
