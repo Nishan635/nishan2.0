@@ -10,7 +10,7 @@
   border: 1px solid #686767;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
   .spotlight-group {
     flex-direction: column;
     text-align: center;
@@ -19,10 +19,20 @@
     margin-top: 20px;
   }
 }
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 325px) {
   .spotlight img {
     width: 250px;
     height: 350px;
+  }
+}
+@media screen and (max-width: 275px) {
+  .spotlight img {
+    width: 230px;
+    height: 330px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .client_text {
+    line-height: 40px;
   }
 }
